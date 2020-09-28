@@ -1,14 +1,3 @@
-variable prefix {}
-
-variable region {
-  type    = string
-  default = "North Europe"
-}
-
-variable tags {
-  type = map
-}
-
 provider "azurerm" {
   version = "~>2.13.0"
   features {}
