@@ -3,14 +3,9 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "contoso_rg" {
-  name     = "${var.prefix}_rg"
-  location = var.region
-  tags     = var.tags
-}
-
-resource "azurerm_resource_group" "contoso_dev_rg" {
-  name     = "${var.prefix}_dev_rg"
+resource "azurerm_resource_group" "rgs" {
+  count    = length(var.rg_names)
+  name     = "${var.prefix}_${var.rg_names[count.index]}"
   location = var.region
   tags     = var.tags
 }

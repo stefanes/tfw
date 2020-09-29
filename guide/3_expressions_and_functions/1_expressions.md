@@ -95,7 +95,7 @@ output "rg_ids" {
 * Run a `plan` and take a moment to understand how the changes will be applied. 
 
     * Feel free to pass in `contoso.<region>.tfvars` if needed. 
-    * By default, we deploy to `UK South` (as defined in `terraform.tfvars`))
+    * By default, we deploy to `UK South` (as defined in `variables.tf`))
 
 * It should look something like below
 

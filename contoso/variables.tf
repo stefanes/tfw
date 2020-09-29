@@ -1,8 +1,15 @@
-variable prefix {}
+variable rg_names {
+  type = list(string)
+}
+
+variable prefix {
+  type    = string
+  default = "contoso"
+}
 
 variable region {
   type    = string
-  default = "North Europe"
+  default = "UK South"
 }
 
 variable tags {
