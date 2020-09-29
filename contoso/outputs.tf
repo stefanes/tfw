@@ -4,3 +4,7 @@ output "rg_ids" {
   # or for expression
   # value = [for rg in azurerm_resource_group.rgs : rg.id]
 }
+
+output "vnet_ids" {
+  value = azurerm_virtual_network.vnet.*.id
+}
