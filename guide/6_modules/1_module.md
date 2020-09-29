@@ -20,7 +20,7 @@ To get started, create a folder called modules and create the required config fi
 
 ```bash
 # create the folders
-mkdir -m modules/contoso-az-connectedrg
+mkdir -p modules/contoso-az-connectedrg
 
 cd modules/contoso-az-connectedrg
 touch README.md
@@ -341,7 +341,7 @@ As done before, verify the changes.
 
 #### [Optional]
 
-If you have a remote git repo setup, create a new repo called `tf-modules` or something similar and copy the module to remote. Then you should be able to refer to the remote repo.
+If you have a remote git repo setup, create a new repo called `tfw-modules` or something similar and copy the module to remote. Then you should be able to refer to the remote repo.
 
 Additionally, you can also `tag` a commit and use it for versioning the `module`
 

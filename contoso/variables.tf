@@ -6,17 +6,3 @@ variable rg_names {
 variable vnets {
   type = list(map(string))
 }
-
-variable prefix {
-  type    = string
-  default = "contoso"
-}
-
-variable region {
-  type    = string
-  default = "UK South"
-}
-
-variable tags {
-  type = map
-}
